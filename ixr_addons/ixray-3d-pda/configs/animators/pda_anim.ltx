@@ -1,0 +1,350 @@
+[base_animator_hud]:hud_base
+;стрейф влево
+hud_move_left_offset_pos = -0.0,0,0
+hud_move_left_offset_rot = 0,0,0
+
+hud_move_left_offset_pos_16x9 = -0.00,0,0
+hud_move_left_offset_rot_16x9 = 0,0,0
+
+;стрейф вправо
+hud_move_right_offset_pos = 0.00,0,0
+hud_move_right_offset_rot = 0,0,0
+
+hud_move_right_offset_pos_16x9 = 0.00,0,0
+hud_move_right_offset_rot_16x9 = 0,0,0
+
+;движение вперед
+hud_move_forward_offset_pos = 0,0,0.0
+hud_move_forward_offset_pos_16x9 = 0,0,0.0
+
+;движение назад
+hud_move_back_offset_pos = 0,0,0.0
+hud_move_back_offset_pos_16x9 = 0,0,0.0
+
+;прыжок
+hud_move_jump_offset_pos = 0,0,0
+hud_move_jump_offset_rot = 0,0,0
+
+hud_move_jump_offset_pos_16x9 = 0,0,0
+hud_move_jump_offset_rot_16x9 = 0,0,0
+
+;падение
+hud_move_fall_offset_pos = 0,0,0
+hud_move_fall_offset_rot = 0,0,0
+
+hud_move_fall_offset_pos_16x9 = 0,0,0
+hud_move_fall_offset_rot_16x9 = 0,0,0
+
+;приземление - перва¤ фаза
+hud_move_landing_offset_pos = 0,0,0
+hud_move_landing_offset_rot = 0,0,0
+
+hud_move_landing_offset_pos_16x9 = 0,0,0
+hud_move_landing_offset_rot_16x9 = 0,0,0
+
+;приземление - втора¤ фаза
+hud_move_landing_offset_pos = 0,0,0
+hud_move_landing_offset_rot = 0,0,0
+
+hud_move_landing_offset_pos_16x9 = 0,0,0
+hud_move_landing_offset_rot_16x9 = 0,0,0
+
+;переход из стойки в прис¤д
+to_crouch_time = 0.15
+hud_move_to_crouch_offset_pos = 0,0,0
+hud_move_to_crouch_offset_rot = 0,0,0
+
+hud_move_to_crouch_offset_pos_16x9 = 0,0,0
+hud_move_to_crouch_offset_rot_16x9 = 0,0,0
+
+;переход из прис¤да в стойку
+from_crouch_time = 0.15
+hud_move_from_crouch_offset_pos = 0,0,0
+hud_move_from_crouch_offset_rot = 0,0,0
+
+hud_move_from_crouch_offset_pos_16x9 = 0,0,0
+hud_move_from_crouch_offset_rot_16x9 = 0,0,0
+
+;переход из прис¤да в низкий прис¤д
+to_slow_crouch_time = 0.15
+hud_move_to_slow_crouch_offset_pos = 0,0,0
+hud_move_to_slow_crouch_offset_rot = 0,0,0
+
+hud_move_to_slow_crouch_offset_pos_16x9 = 0,0,0
+hud_move_to_slow_crouch_offset_rot_16x9 = 0,0,0
+
+;переход из низкого прис¤да в прис¤д
+from_slow_crouch_time = 0.15
+hud_move_from_slow_crouch_offset_pos = 0,0,0
+hud_move_from_slow_crouch_offset_rot = 0,0,0
+
+hud_move_from_slow_crouch_offset_pos_16x9 = 0,0,0
+hud_move_from_slow_crouch_offset_rot_16x9 = 0,0,0
+
+[pda_show_animator_hud]:base_animator_hud
+screen_kx = 1.0				;(screen_height/screen_width)/(768/1024)
+hud_fov = 55
+blend = true 
+
+;стрейф влево
+hud_move_left_offset_pos = -0.01,0,0
+hud_move_left_offset_rot = 0,0,-2
+
+hud_move_left_offset_pos_16x9 = -0.01,0,0
+hud_move_left_offset_rot_16x9 = 0,0,-2
+
+;стрейф вправо
+hud_move_right_offset_pos = 0.01,0,0
+hud_move_right_offset_rot = 0,0,2
+
+hud_move_right_offset_pos_16x9 = 0.01,0,0
+hud_move_right_offset_rot_16x9 = 0,0,2
+
+
+;движение вперед
+hud_move_forward_offset_pos = 0,-0.01,-0.015
+hud_move_forward_offset_rot = 0,0,0
+
+hud_move_forward_offset_pos_16x9 = 0,-0.01,-0.015
+hud_move_forward_offset_rot_16x9 = 0,0,0
+
+;движение назад
+hud_move_back_offset_pos = 0,-0.01,0.015
+hud_move_back_offset_rot = 0,0,0
+
+hud_move_back_offset_pos_16x9 = 0,-0.01,0.015
+hud_move_back_offset_rot_16x9 = 0,0,0
+
+;прыжок
+hud_move_jump_offset_pos = 0,0.05,0.03
+hud_move_jump_offset_rot = 0,-10,-10
+
+hud_move_jump_offset_pos_16x9 = 0,0.05,0.03
+hud_move_jump_offset_rot_16x9 = 0,-10,-10
+
+;падение
+hud_move_fall_offset_pos = 0,-0.05,0.06
+hud_move_fall_offset_rot = 0,5,0
+
+hud_move_fall_offset_pos_16x9 = 0,-0.05,0.06
+hud_move_fall_offset_rot_16x9 = 0,5,0
+
+;приземление - первая фаза
+hud_move_landing_offset_pos = 0,-0.2,0.03
+hud_move_landing_offset_rot = 0,8,10
+
+hud_move_landing_offset_pos_16x9 = 0,-0.2,0.03
+hud_move_landing_offset_rot_16x9 = 0,8,10
+
+;приземление - вторая фаза
+hud_move_landing2_offset_pos = 0,-0.2,0.03
+hud_move_landing2_offset_rot = 0,-13,20
+
+hud_move_landing2_offset_pos_16x9 = 0,-0.3,0.03
+hud_move_landing2_offset_rot_16x9 = 0,-13,20
+
+;переход из стойки в присяд
+to_crouch_time = 0.15
+hud_move_to_crouch_offset_pos = 0,-0.02, 0
+hud_move_to_crouch_offset_rot = 0,4,-4
+
+hud_move_to_crouch_offset_pos_16x9 = 0,-0.02, 0
+hud_move_to_crouch_offset_rot_16x9 = 0,4,-4
+
+;переход из присяда в стойку
+from_crouch_time = 0.15
+hud_move_from_crouch_offset_pos = 0,0.03,0
+hud_move_from_crouch_offset_rot = 0,-4,4
+
+hud_move_from_crouch_offset_pos_16x9 = 0,0.03,0
+hud_move_from_crouch_offset_rot_16x9 = 0,-4,4
+
+;переход из присяда в низкий присяд
+to_slow_crouch_time = 0.15
+hud_move_to_slow_crouch_offset_pos = 0,-0.05, 0
+hud_move_to_slow_crouch_offset_rot = 0,2.5,-2
+
+hud_move_to_slow_crouch_offset_pos_16x9 = 0,-0.05, 0
+hud_move_to_slow_crouch_offset_rot_16x9 = 0,2.5,-2
+
+;переход из низкого присяда в присяд
+from_slow_crouch_time = 0.15
+hud_move_from_slow_crouch_offset_pos = 0,0.05,0
+hud_move_from_slow_crouch_offset_rot = 0,-2.5,2
+
+hud_move_from_slow_crouch_offset_pos_16x9 = 0,0.05,0
+hud_move_from_slow_crouch_offset_rot_16x9 = 0,-2.5,2
+
+blowout_anim_level = 4.5;
+
+joystick_bone = conlrol
+thumb_rot_x = 1
+thumb_rot_y = -0.1
+
+snd_draw                = device\pda\pda_draw
+snd_holster             = device\pda\pda_holster
+snd_blowout             = device\pda\pda_dead
+
+item_visual             	= dynamics\devices\dev_pda\dev_pda_hud.ogf
+
+anm_switch_device = kyky_smoke_pda_idle
+anm_switch_device_aim = kyky_smoke_pda_idle
+
+zoom_dof_near = -100
+
+hud_fov_factor = 1
+hud_fov_zoom_factor = 0.37
+
+anm_show                    = kyky_smoke_pda_draw
+anm_show_fastzoom           = kyky_smoke_pda_draw
+anm_idle_aim_start_fastzoom = kyky_smoke_pda_idle_aim
+anm_idle_fastzoom           = kyky_smoke_pda_idle
+anm_hide		            = kyky_smoke_pda_holster
+anm_idle_aim_end_hide       = kyky_smoke_pda_holster_empty
+anm_hide_emerg              = kyky_smoke_pda_holster_empty
+
+;pda_aim_draw
+anm_idle		            = kyky_smoke_pda_idle
+anm_idle_click		        = kyky_smoke_pda_idle
+anm_idle_up                 = kyky_smoke_pda_idle
+anm_idle_up_right           = kyky_smoke_pda_idle
+anm_idle_right              = kyky_smoke_pda_idle
+anm_idle_down_right         = kyky_smoke_pda_idle
+anm_idle_down               = kyky_smoke_pda_idle
+anm_idle_down_left          = kyky_smoke_pda_idle
+anm_idle_left               = kyky_smoke_pda_idle
+anm_idle_up_left            = kyky_smoke_pda_idle
+
+anm_idle_slow               = kyky_smoke_pda_idle
+anm_idle_click_slow         = kyky_smoke_pda_idle
+anm_idle_up_slow            = kyky_smoke_pda_idle
+anm_idle_up_right_slow      = kyky_smoke_pda_idle
+anm_idle_right_slow         = kyky_smoke_pda_idle
+anm_idle_down_right_slow    = kyky_smoke_pda_idle       
+anm_idle_down_slow          = kyky_smoke_pda_idle
+anm_idle_down_left_slow     = kyky_smoke_pda_idle
+anm_idle_left_slow          = kyky_smoke_pda_idle
+anm_idle_up_left_slow       = kyky_smoke_pda_idle
+
+anm_idle_crouch             = kyky_smoke_pda_idle
+anm_idle_click_crouch       = kyky_smoke_pda_idle
+anm_idle_up_crouch          = kyky_smoke_pda_idle
+anm_idle_up_right_crouch    = kyky_smoke_pda_idle
+anm_idle_right_crouch       = kyky_smoke_pda_idle
+anm_idle_down_right_crouch  = kyky_smoke_pda_idle           
+anm_idle_down_crouch        = kyky_smoke_pda_idle
+anm_idle_down_left_crouch   = kyky_smoke_pda_idle
+anm_idle_left_crouch        = kyky_smoke_pda_idle
+anm_idle_up_left_crouch     = kyky_smoke_pda_idle
+
+anm_idle_crouch_slow             = kyky_smoke_pda_idle
+anm_idle_click_crouch            = kyky_smoke_pda_idle
+anm_idle_up_crouch_slow          = kyky_smoke_pda_idle
+anm_idle_up_right_crouch_slow    = kyky_smoke_pda_idle
+anm_idle_right_crouch_slow       = kyky_smoke_pda_idle
+anm_idle_down_right_crouch_slow  = kyky_smoke_pda_idle
+anm_idle_down_crouch_slow        = kyky_smoke_pda_idle
+anm_idle_down_left_crouch_slow   = kyky_smoke_pda_idle
+anm_idle_left_crouch_slow        = kyky_smoke_pda_idle
+anm_idle_up_left_crouch_slow     = kyky_smoke_pda_idle
+
+anm_idle_moving	            = kyky_smoke_pda_walk_new
+anm_idle_click_moving	    = kyky_smoke_pda_walk_new
+anm_idle_up_moving          = kyky_smoke_pda_walk_new
+anm_idle_up_right_moving    = kyky_smoke_pda_walk_new
+anm_idle_right_moving       = kyky_smoke_pda_walk_new
+anm_idle_down_right_moving  = kyky_smoke_pda_walk_new
+anm_idle_down_moving        = kyky_smoke_pda_walk_new
+anm_idle_down_left_moving   = kyky_smoke_pda_walk_new
+anm_idle_left_moving        = kyky_smoke_pda_walk_new
+anm_idle_up_left_moving     = kyky_smoke_pda_walk_new
+
+anm_idle_moving_slow             = kyky_smoke_pda_walk_new
+anm_idle_click_moving_slow       = kyky_smoke_pda_walk_new
+anm_idle_up_moving_slow          = kyky_smoke_pda_walk_new
+anm_idle_up_right_moving_slow    = kyky_smoke_pda_walk_new
+anm_idle_right_moving_slow       = kyky_smoke_pda_walk_new
+anm_idle_down_right_moving_slow  = kyky_smoke_pda_walk_new
+anm_idle_down_moving_slow        = kyky_smoke_pda_walk_new
+anm_idle_down_left_moving_slow   = kyky_smoke_pda_walk_new
+anm_idle_left_moving_slow        = kyky_smoke_pda_walk_new
+anm_idle_up_left_moving_slow     = kyky_smoke_pda_walk_new
+
+anm_idle_moving_crouch 	           = kyky_smoke_pda_walk_new
+anm_idle_click_moving_crouch 	   = kyky_smoke_pda_walk_new
+anm_idle_up_moving_crouch          = kyky_smoke_pda_walk_new
+anm_idle_up_right_moving_crouch    = kyky_smoke_pda_walk_new
+anm_idle_right_moving_crouch       = kyky_smoke_pda_walk_new
+anm_idle_down_right_moving_crouch  = kyky_smoke_pda_walk_new
+anm_idle_down_moving_crouch        = kyky_smoke_pda_walk_new
+anm_idle_down_left_moving_crouch   = kyky_smoke_pda_walk_new
+anm_idle_left_moving_crouch        = kyky_smoke_pda_walk_new
+anm_idle_up_left_moving_crouch     = kyky_smoke_pda_walk_new
+
+anm_idle_moving_crouch_slow             = kyky_smoke_pda_walk_new
+anm_idle_click_moving_crouch_slow       = kyky_smoke_pda_walk_new
+anm_idle_up_moving_crouch_slow          = kyky_smoke_pda_walk_new
+anm_idle_up_right_moving_crouch_slow    = kyky_smoke_pda_walk_new
+anm_idle_right_moving_crouch_slow       = kyky_smoke_pda_walk_new
+anm_idle_down_right_moving_crouch_slow  = kyky_smoke_pda_walk_new
+anm_idle_down_moving_crouch_slow        = kyky_smoke_pda_walk_new
+anm_idle_down_left_moving_crouch_slow   = kyky_smoke_pda_walk_new
+anm_idle_left_moving_crouch_slow        = kyky_smoke_pda_walk_new
+anm_idle_up_left_moving_crouch_slow     = kyky_smoke_pda_walk_new
+
+can_sprint = true
+
+anm_idle_sprint	                        = kyky_smoke_pda_run_new
+anm_idle_sprint_start	                = zovchernobyl_idle
+anm_idle_sprint_end	                 	= zovchernobyl_idle
+
+anm_bore		                        = kyky_smoke_pda_idle
+anm_blowout		                        = kyky_smoke_pda_dead
+
+anm_idle_aim		        = kyky_smoke_pda_idle_aim
+anm_idle_aim_click          = kyky_smoke_pda_idle_aim
+anm_idle_aim_up             = kyky_smoke_pda_idle_aim
+anm_idle_aim_up_right       = kyky_smoke_pda_idle_aim     
+anm_idle_aim_right          = kyky_smoke_pda_idle_aim
+anm_idle_aim_down_right     = kyky_smoke_pda_idle_aim
+anm_idle_aim_down           = kyky_smoke_pda_idle_aim
+anm_idle_aim_down_left      = kyky_smoke_pda_idle_aim
+anm_idle_aim_left           = kyky_smoke_pda_idle_aim
+anm_idle_aim_up_left        = kyky_smoke_pda_idle_aim
+
+anm_idle_aim_moving	           = kyky_smoke_pda_walk_new
+anm_idle_aim_click_moving      = kyky_smoke_pda_walk_new
+anm_idle_aim_up_moving         = kyky_smoke_pda_walk_new
+anm_idle_aim_up_right_moving   = kyky_smoke_pda_walk_new
+anm_idle_aim_right_moving      = kyky_smoke_pda_walk_new
+anm_idle_aim_down_right_moving = kyky_smoke_pda_walk_new
+anm_idle_aim_down_moving       = kyky_smoke_pda_walk_new
+anm_idle_aim_down_left_moving  = kyky_smoke_pda_walk_new
+anm_idle_aim_left_moving       = kyky_smoke_pda_walk_new
+anm_idle_aim_up_left_moving    = kyky_smoke_pda_walk_new
+
+anm_idle_aim_start      = zovchernobyl_idle
+anm_idle_aim_end	    = zovchernobyl_idle
+
+inertion_pitch_offset_r = 0
+inertion_pitch_offset_n = 0
+inertion_pitch_offset_d = 0
+inertion_speed = 10
+inertion_origin_offset = -0.03
+
+inertion_aim_pitch_offset_r = 0
+inertion_aim_pitch_offset_n = 0
+inertion_aim_pitch_offset_d = 0
+inertion_aim_speed = 10
+inertion_aim_origin_offset = 0
+
+hands_position                                     = 0,0,0
+hands_position_16x9                                = 0,0,0
+item_position                                     = 0.005,0,0
+
+
+aim_hud_offset_pos		    = 0,-0.063,0
+aim_hud_offset_rot		    = -0.4,0,0
+
+aim_hud_offset_pos_16x9		= 0,-0.063,0
+aim_hud_offset_rot_16x9		= -0.4,0,0
