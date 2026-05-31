@@ -192,26 +192,24 @@ zoom_dof_near = -100
 hud_fov_factor = 1
 hud_fov_zoom_factor = 0.37
 
-anm_show                    = kyky_smoke_pda_draw
-anm_show_fastzoom           = kyky_smoke_pda_draw
-anm_idle_aim_start_fastzoom = kyky_smoke_pda_idle_aim
-anm_idle_fastzoom           = kyky_smoke_pda_idle
-anm_hide		            = kyky_smoke_pda_holster
-anm_idle_aim_end_hide       = kyky_smoke_pda_holster_empty
-anm_hide_emerg              = kyky_smoke_pda_holster_empty
+anm_show                    = kyky_smoke_pda_draw, draw
+anm_show_fastzoom           = kyky_smoke_pda_draw, draw
+anm_idle_aim_start_fastzoom = kyky_smoke_pda_idle_aim, idle
+anm_idle_fastzoom           = kyky_smoke_pda_idle, idle
+anm_hide		            = kyky_smoke_pda_holster, hide
+anm_idle_aim_end_hide       = kyky_smoke_pda_holster_empty, hide
+anm_hide_emerg              = kyky_smoke_pda_holster_empty, hide
 
 ;pda_aim_draw
-anm_idle		            = kyky_smoke_pda_idle
-anm_idle_click		        = kyky_smoke_pda_idle
-anm_idle_moving	            = kyky_smoke_pda_walk_new
-anm_idle_click_moving	    = kyky_smoke_pda_walk_new
+anm_idle		            = kyky_smoke_pda_idle, idle
+anm_idle_moving	            = kyky_smoke_pda_walk_new, idle
 
 can_sprint = true
-anm_idle_sprint	                        = kyky_smoke_pda_run_new
-anm_idle_sprint_start	                = zovchernobyl_idle
-anm_idle_sprint_end	                 	= zovchernobyl_idle
-anm_bore		                        = kyky_smoke_pda_idle
-anm_blowout		                        = kyky_smoke_pda_dead
+anm_idle_sprint	                        = kyky_smoke_pda_run_new, idle
+anm_idle_sprint_start	                = zovchernobyl_idle, idle
+anm_idle_sprint_end	                 	= zovchernobyl_idle, idle
+anm_bore		                        = kyky_smoke_pda_idle, idle
+anm_blowout		                        = kyky_smoke_pda_dead, idle
 
 anm_idle_aim		        = kyky_smoke_pda_idle_aim
 anm_idle_aim_click          = kyky_smoke_pda_idle_aim
